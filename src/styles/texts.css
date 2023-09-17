@@ -1,0 +1,38 @@
+body {
+  font-family: "Inter";
+}
+
+.userCard__info h2,
+.suggestions__container h2 {
+  font-weight: var(--font-weigth2);
+  font-size: var(--font-size2);
+  line-height: var(--line-heigth3);
+}
+
+.userCard__info p {
+  font-weight: var(--font-weigth3);
+  font-size: var(--font-size4);
+  line-height: var(--line-heigth4);
+  color: var(--grey-color2);
+}
+
+.feed__title,
+.userPost__title {
+  font-weight: var(--font-weigth1);
+  font-size: var(--font-size1);
+  line-height: var(--line-heigth1);
+}
+
+button {
+  font-weight: var(--font-weigth2);
+  font-size: var(--font-size4);
+  cursor: pointer;
+}
+
+.newPost__tittle,
+.newPost__content,
+.userPost__content {
+  font-weight: var(--font-weigth3);
+  font-size: var(--font-size3);
+  line-height: var(--line-heigth2);
+}

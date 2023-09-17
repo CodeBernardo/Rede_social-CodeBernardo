@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bernardo Stein" />
+    <meta name="description" content="Uma rede social sobre tecnologia" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/texts.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/modals.css">
+    <link rel="stylesheet" href="./src/styles/mediaQuerys.css">
+
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./src/scripts/index.js" type="module" defer></script>
+
+    <title>Criando rede social</title>
+  </head>
+  <body>
+    <header class="navBar">
+      <img src="./src/assets/img/logo.svg" alt="" class="navBar__img" />
+      <p class="navBar__item">Sair</p>
+    </header>
+
+    <main class="main__container">
+      <section class="userSection__container">
+        <section class="newPost__container">
+          <div class="userCard__container">
+            <img src="./src/assets/img/user1.svg" alt="Samuel" class="userCard__img"/>
+            <div class="userCard__info">
+              <h2>Samuel Leão</h2>
+              <p>Front end Engineer</p>
+            </div>
+          </div>
+
+          <form>
+            <input
+              type="text"
+              placeholder="Digite o título do post"
+              required=""
+              class="newPost__tittle"
+            />
+            <textarea
+              placeholder="Digite a descrição do post"
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              required=""
+              class="newPost__content"
+            ></textarea>
+            <button type="submit" class="newPost__btnSubmit">Postar</button>
+          </form>
+        </section>
+
+        <section class="suggestions__container">
+          <h2>Sugestões para você seguir</h2>
+          <ul class="suggestions__list">
+            <li class="suggestions__item">
+              <div class="userCard__container">
+                <img src="./src/assets/img/user2.svg" alt="Carlos Lima" class="userCard__img"  />
+                <div class="userCard__info">
+                  <h2>Carlos Lima</h2>
+                  <p>UX e UI Designer</p>
+                </div>
+              </div>
+              <button class="suggestions__followBtn">Seguir</button>
+            </li>
+            <li class="suggestions__item">
+              <div class="userCard__container">
+                <img src="./src/assets/img/user3.svg" alt="Rafael Bertoldo" class="userCard__img" />
+                <div class="userCard__info">
+                  <h2>Rafael Bertoldo</h2>
+                  <p>Devop's</p>
+                </div>
+              </div>
+              <button class="suggestions__followBtn">Seguir</button>
+            </li>
+            <li class="suggestions__item">
+              <div class="userCard__container">
+                <img src="./src/assets/img/user4.svg" alt="Júlia Martins" class="userCard__img" />
+                <div class="userCard__info">
+                  <h2>Júlia Martins</h2>
+                  <p>Fullstack Engineer</p>
+                </div>
+              </div>
+              <button class="suggestions__followBtn">Seguir</button>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <h2 class="feed__title">Posts</h2>
+        <div class="feed__container">
+        </div>
+      </section>
+      <dialog class="modalPost__controller"></dialog>
+    </main>
+  </body> 
+</html>
+
